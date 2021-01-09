@@ -1,0 +1,163 @@
+body{
+  margin: 0;
+  font-size: 16px;
+  font-family: Verdana;
+  color: #333;
+}
+
+header {
+  background: hsl(180, 50%, 50%);
+  color: #fff;
+  text-align: center;
+}
+
+header img{
+  width: 280px;
+  vertical-align: bottom;
+}
+
+header h1, header p{
+  margin: 0;
+}
+
+.btn{
+  text-decoration: none;
+  background: hsl(0, 0%, 100%);
+  color:hsl(180, 50%, 50%);
+  display: block;
+  width: 140px;
+  line-height: 44px;
+  margin: 40px auto;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.btn:hover{
+  opacity: 0.9;
+}
+
+.profile img{
+  width: 280px;
+}
+
+.profile > h1{
+  text-align: center;
+  font-weight: normal;
+  padding: 64px 0;
+}
+
+.profile p{
+  line-height: 1.8;
+}
+
+.profile .container{
+  margin: 0 32px;
+}
+
+.profile section{
+  padding-bottom: 64px;
+}
+
+.task{
+  background:hsl(180, 63%, 93%)
+}
+
+.task h1{
+  text-align: center;
+  padding: 64px 0;
+  font-weight: normal;
+}
+
+.task ul{
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.task img{
+  width: 160px;
+  border: 2px #333 solid;
+  border-radius: 20%;
+}
+
+.task h2{
+  font-size: 20px;
+}
+
+.task li{
+  padding-bottom: 64px;
+}
+
+.call-to-action{
+  background:hsl(180, 50%, 50%);
+  color: #333;
+  text-align: center;
+  padding: 64px 0;
+}
+
+.call-to-action h1{
+  font-weight: normal;
+}
+
+.coll-to-action .btn{
+  margin: 0 auto;
+}
+
+footer{
+  padding:64px 0;
+  background:hsl(180, 92%, 10%);
+  color:hsl(0, 0%, 100%);
+  text-align: center;
+}
+
+@media(min-width: 900px){
+  header .container{
+    display: flex;
+    width: 800px;
+    margin: 0 auto;
+  }
+
+  header .info{
+    width: 60%;
+    align-self: center;
+  }
+
+  header .img{
+    width: 40%;
+  }
+
+  .profile .cotainer{
+    width: 800px;
+    margin: 0 auto;
+  }
+
+  .profile section{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .profile section:nth-child(even){
+    flex-direction: row-reverse;
+  }
+
+  .profile .img{
+    width: 50%;
+  }
+
+  .profile .info{
+    width: calc(50% - 32px);
+  }
+
+  .task ul{
+    width: 800px;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .task li{
+    width: 250px;
+  }
+}
